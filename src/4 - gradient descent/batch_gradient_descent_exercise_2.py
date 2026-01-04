@@ -6,10 +6,6 @@ LEARNING_RATE = 0.0001
 MAX_STEPS = 10000000000
 symbol_w, symbol_b, symbol_feature = sp.symbols('w b feature')
 f = symbol_w * symbol_feature + symbol_b
-# df_dw = sp.diff(f, symbol_w)
-# df_db = sp.diff(f, symbol_b)
-# print(f"∂f/∂w : {df_dw}")
-# print(f"∂f/∂b : {df_db}")
 
 surfaces = np.array([30, 45, 50, 60, 70, 80, 90, 100, 120, 150])
 prices = np.array([170000, 230000, 250000, 290000, 330000, 370000, 410000, 450000, 530000, 650000])
