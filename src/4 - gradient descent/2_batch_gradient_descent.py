@@ -28,8 +28,8 @@ def training():
         b = b - LEARNING_RATE * gradient_b
 
         if nb_steps % 10000 == 0 or error < THRESHOLD:
-            print(f"∂f/∂w en w={w} : {gradient_w}")
-            print(f"∂f/∂b en b={b} : {gradient_b}")
+            print(f"∂f/∂w at w={w} : {gradient_w}")
+            print(f"∂f/∂b at b={b} : {gradient_b}")
             print(f"Step {nb_steps:2d}: w = {w:.6f}, b = {b:.6f}, error = {error:.10f}")
             print("w:", w, "b:", b, "error:", error, "steps:", nb_steps)
 

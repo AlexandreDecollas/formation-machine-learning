@@ -1,0 +1,29 @@
+[project]
+name = "formation-machine-learning"
+version = "0.1.0"
+description = "Machine Learning Training - Examples and exercises"
+authors = [
+    {name = "Alexandre Decollas",email = "alexandre.decollas.pro@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=2.0.0",
+    "matplotlib>=3.9.0",
+    "scikit-learn>=1.6.0",
+    "scipy>=1.13.0",
+    "ward>=0.68.0b0",
+    "click>=8.1.0",
+    "rich>=14.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -2,10 +2,10 @@ import unittest
 from .adaptative_batch_gradient_descent import adapt_learning_rate
 
 class TestCalculator(unittest.TestCase):
-    """Tests unitaires pour la classe Calculator."""
+    """Unit tests for the Calculator class."""
 
     def setUp(self):
-        """Initialisation avant chaque test."""
+        """Initialization before each test."""
 
     def test_adapt_learning_rate_0(self):
         """Should return same learning rate when previous error is infinity."""

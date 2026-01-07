@@ -25,8 +25,8 @@ def main(x, y):
 
         error = x**2 + y**2
 
-        print(f"∂f/∂x en x={x} : {gradient_x}")
-        print(f"∂f/∂y en y={y} : {gradient_y}")
+        print(f"∂f/∂x at x={x} : {gradient_x}")
+        print(f"∂f/∂y at y={y} : {gradient_y}")
 
         if nb_steps % 5 == 0 or error < THRESHOLD:
             print(f"Step {nb_steps:2d}: x = {x:.6f}, y = {y:.6f}, error = {error:.10f}")

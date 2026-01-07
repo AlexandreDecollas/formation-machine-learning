@@ -17,10 +17,10 @@ def adapt_learning_rate(learning_rate, previous_error, new_error):
         return learning_rate
 
     gap = previous_error - new_error
-    pourcent_gap = gap / previous_error
-    if previous_error < new_error or pourcent_gap >= 0.2:
+    percent_gap = gap / previous_error
+    if previous_error < new_error or percent_gap >= 0.2:
         return learning_rate / 2
-    if pourcent_gap <= 0.1:
+    if percent_gap <= 0.1:
         return learning_rate * 2
 
     return learning_rate
@@ -56,8 +56,8 @@ def training():
 
         if nb_steps % 10000 == 0 or error < THRESHOLD:
             print("previous_error: ", previous_error, "error: ",error, "learning_rate: ", learning_rate)
-            print(f"∂f/∂w en w={w} : {gradient_w}")
-            print(f"∂f/∂b en b={b} : {gradient_b}")
+            print(f"∂f/∂w at w={w} : {gradient_w}")
+            print(f"∂f/∂b at b={b} : {gradient_b}")
             print(f"Step {nb_steps:2d}: w = {w:.6f}, b = {b:.6f}, error = {error:.10f}")
             print("w:", w, "b:", b, "error:", error, "steps:", nb_steps)
 

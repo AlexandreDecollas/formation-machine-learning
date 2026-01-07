@@ -1,2 +1,11 @@
 .idea
 /.venv/
+.direnv
+*.egg-info
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
